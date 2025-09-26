@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "primer-proyecto-full-codigo"
+version = "0.1.0"
+description = "API base (FastAPI) para agente WA+RAG"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.114.2",
+  "uvicorn[standard]==0.30.6",
+  "pydantic-settings==2.5.2",
+  "httpx==0.27.2",
+  "sentry-sdk==2.13.0",
+  "pymongo==4.8.0",
+  "qdrant-client==1.11.1",
+]
+
+[tool.setuptools]
+# Usamos discovery explícita para evitar que 'docker' cuente como paquete
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*", "config*"]
+exclude = ["tests*", "docker*", "ops*", "scripts*"]
+
+# (Opcional) Si prefieres lista explícita en vez de find:
+# packages = ["app", "config"]

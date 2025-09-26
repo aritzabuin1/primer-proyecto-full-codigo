@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: primer-proyecto-full-codigo
+Version: 0.1.0
+Summary: API base (FastAPI) para agente WA+RAG
+Requires-Python: >=3.12
+Requires-Dist: fastapi==0.114.2
+Requires-Dist: uvicorn[standard]==0.30.6
+Requires-Dist: pydantic-settings==2.5.2
+Requires-Dist: httpx==0.27.2
+Requires-Dist: sentry-sdk==2.13.0
+Requires-Dist: pymongo==4.8.0
+Requires-Dist: qdrant-client==1.11.1

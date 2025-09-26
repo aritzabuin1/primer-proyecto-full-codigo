@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+./app/__init__.py
+./app/main.py
+./config/__init__.py
+./config/logging.py
+./config/settings.py
+primer_proyecto_full_codigo.egg-info/PKG-INFO
+primer_proyecto_full_codigo.egg-info/SOURCES.txt
+primer_proyecto_full_codigo.egg-info/dependency_links.txt
+primer_proyecto_full_codigo.egg-info/requires.txt
+primer_proyecto_full_codigo.egg-info/top_level.txt
